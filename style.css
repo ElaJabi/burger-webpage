@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mochiy+Pop+One&display=swap');
+
+* {
+    padding:0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+}
+
+html {
+    font-size: 90%;
+}
+
+:root {
+    --red: 	#DA291C;
+    --yellow: #FFC72C;
+    --white: #fff;
+    --black: #27251F;
+    --heading: 'Mochiy Pop One', sans-serif;
+}
+
+body {
+    background: black;
+    width: 100%;
+}
+
+header {
+    padding: 2rem 7%;
+    height: 100vh;
+     
+}
+
+.header {
+    background: url("image/background.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: cover;
+
+}
+
+.header .navbar {
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.header .navbar .logo p{
+    font-size: 2rem;
+    font-family: var(--heading);
+}
+
+.header .navbar .logo p:hover {
+    color: var(--yellow);
+
+}
+
+.header .navbar .button {
+    display: flex;
+    gap: 1rem;
+}
+
+.header .navbar .button a {
+    background: var(--yellow);
+    padding: 10px 15px;
+    text-decoration: none;
+    color: var(--black);
+    font-weight: 600;
+    border-radius: 10px;
+    align-content: center;
+    font-size: 1.2rem;
+}
+
+.header .navbar .button a:hover {
+    color: var(--red);
+}
+
+.header .navbar .nav-links {
+    margin-top: 1rem;
+}
+
+.header .navbar .nav-links ul {
+    display: flex;
+    list-style: none;
+    gap: 1rem;
+}
+
+.header .navbar .nav-links ul li a {
+    text-decoration: none;
+    font-size: 1rem;
+    color: var(--black);
+    font-size: 1.3rem;
+
+}
+
+.header .navbar .nav-links ul li a:hover {
+    color: var(--white);
+}
+
+.header .hero-wrapper {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    margin-top: 5rem;
+}
+
+.header .hero-wrapper .hero-content h1 {
+    font-size: 4rem;
+    font-family: var(--heading);
+    color: #27251F;
+}
+
+.header .hero-wrapper .hero-content h1 span {
+    color: var(--yellow);
+    transition: .4s linear;
+    font-family: 'Mochiy Pop One', sans-serif;
+}
+
+.header .hero-wrapper .hero-content h2 {
+    font-size: 2.5rem;
+    font-weight: 200;
+    color: var(--white);
+    text-align: center;
+}
+
+.header .hero-wrapper .hero-image {
+    width: 100%;
+    text-align: center;
+    margin-top:-4rem;
+}
+
+.header .hero-wrapper .hero-image img {
+    width: 70%;
+    
+}
+
+@media (max-width: 991px) {
+
+    html {
+        font-size: 70%;
+    }
+
+    header {
+        padding: 2rem 4%;
+    }
+
+    .header .nav-links {
+        display: none;
+    }
+
+    .header .hero-wrapper {
+        gap: 6rem;
+    }
+
+    .header .hero-wrapper .hero-image img {
+        width: 100%;
+    }
+
+
+}
